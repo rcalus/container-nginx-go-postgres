@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>True To Size</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-fluid">
+      <h2>True to Size</h2>
+      <div>&nbsp;</div>
+      <form>
+        <div id="error" class="alert alert-danger">
+            <span id="errorText"></span>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="form-group">
+              <label for="size">How do they fit? 1 (really small) - 5 (big)</label>
+              <input type="number" class="form-control" id="size" placeholder="Enter size" min="1" max="5">
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="sendSize">Let us know!</button>
+      </form>
+      <div>&nbsp;</div>
+      <div id="result">
+        <h3>What did everyone else think?</h3>
+        <div class="row">
+          <div class="col-sm-8">
+            <span id="averageText"></span>&nbsp;&nbsp;
+            <span>(Average of </span><span id="average"></span><span>)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/app.js"></script>
+  </div>
+</body>
+
+</html>
